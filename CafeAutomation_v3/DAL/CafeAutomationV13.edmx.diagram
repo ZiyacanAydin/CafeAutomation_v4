@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5199d30a8dee4bdd84a970bb73ed5e07" Name="Diagram1">
+        <EntityTypeShape EntityType="CafeAutomationModel.Category" Width="1.5" PointX="1.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CafeAutomationModel.Kasa" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CafeAutomationModel.Product" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CafeAutomationModel.Sales" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CafeAutomationModel.sysdiagrams" Width="1.5" PointX="3.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CafeAutomationModel.Table" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="CafeAutomationModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="CafeAutomationModel.FK_Kasa_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="CafeAutomationModel.FK_Kasa_Sales" ManuallyRouted="false" />
+        <AssociationConnector Association="CafeAutomationModel.FK_Kasa_Table" ManuallyRouted="false" />
+        <AssociationConnector Association="CafeAutomationModel.FK_Sales_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="CafeAutomationModel.FK_Sales_Table" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
