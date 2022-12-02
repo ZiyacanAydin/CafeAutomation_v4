@@ -34,6 +34,9 @@ namespace CafeAutomation_v3.UI
             KasaManager kasaManager = new KasaManager();
 
            var result = kasaManager.GetAll().Where(x => x.OrderTime <= dateTimePicker2.Value && x.OrderTime >= dateTimePicker1.Value).ToList();
+            dataGridView1.DataSource = result;
+
+
 
         }
 
@@ -42,6 +45,11 @@ namespace CafeAutomation_v3.UI
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

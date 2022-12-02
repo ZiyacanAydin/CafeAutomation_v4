@@ -26,7 +26,7 @@ namespace CafeAutomation_v3.UI
         }
         void listele()
         {
-            dataGridView1.DataSource = productManager.GetAll().Select(x => new { x.CategoryId, x.Name, x.Price, x.Description }).ToList();
+            dataGridView1.DataSource = productManager.GetAll().Select(x => new {x.Id, x.CategoryId, x.Name, x.Price, x.Description }).ToList();
         }
         private void label5_Click(object sender, EventArgs e)
         {

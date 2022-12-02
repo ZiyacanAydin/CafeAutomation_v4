@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesUI));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
@@ -41,9 +42,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.tableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -55,6 +55,10 @@
             this.comboBox1.Size = new System.Drawing.Size(55, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // tableBindingSource
+            // 
+            this.tableBindingSource.DataSource = typeof(CafeAutomation_v3.DAL.Table);
             // 
             // comboBox2
             // 
@@ -79,7 +83,7 @@
             this.button1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button1.Location = new System.Drawing.Point(48, 102);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 4;
             this.button1.Text = "Sipariş Ekle";
             this.button1.UseVisualStyleBackColor = true;
@@ -91,7 +95,7 @@
             this.button2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button2.Location = new System.Drawing.Point(149, 102);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(85, 23);
             this.button2.TabIndex = 5;
             this.button2.Text = "Sipariş Sil";
             this.button2.UseVisualStyleBackColor = true;
@@ -146,7 +150,7 @@
             this.button4.ForeColor = System.Drawing.Color.SaddleBrown;
             this.button4.Location = new System.Drawing.Point(277, 102);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(85, 23);
             this.button4.TabIndex = 11;
             this.button4.Text = "Ödeme Yap";
             this.button4.UseVisualStyleBackColor = true;
@@ -164,10 +168,6 @@
             this.button3.Text = "AnaSayfa";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // tableBindingSource
-            // 
-            this.tableBindingSource.DataSource = typeof(CafeAutomation_v3.DAL.Table);
             // 
             // SalesUI
             // 
@@ -189,8 +189,8 @@
             this.Name = "SalesUI";
             this.Text = "Sipariş Ekranı";
             this.Load += new System.EventHandler(this.SalesUI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
